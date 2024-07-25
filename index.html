@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        function randomRedirect() {
+            var links = [
+                "https://forms.office.com/r/gVDhMDwb3j",
+                "https://forms.office.com/r/ynsXNdpKKJ",
+                "https://forms.office.com/r/YdrZnzU4vJ",
+                "https://forms.office.com/r/AanwFud1NF"
+            ];
+            var randomIndex = Math.floor(Math.random() * links.length);
+            window.location.href = links[randomIndex];
+        }
+    </script>
+</head>
+<body onload="randomRedirect()">
+    <p>Redirecting to a random quiz...</p>
+</body>
+</html>
